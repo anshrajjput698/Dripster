@@ -79,7 +79,7 @@ body::before {
 .categories{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* center all cards */
   gap: 25px;
   margin-top: 40px;
   padding: 0 20px;
@@ -103,6 +103,7 @@ body::before {
   height:120px;
   border-radius: 15px;
   margin-bottom: 15px;
+  object-fit: cover; /* ensures images fit nicely */
 }
 .category-card h2{
   font-family:'Playfair Display', serif;
@@ -141,27 +142,45 @@ body::before {
     <p>Trendy clothes and accessories for men</p>
   </div>
 
-  <!-- Other categories placeholders -->
-  <div class="category-card"><img src="womens-fashion.png" alt="Women’s Fashion"><h2>Women’s Fashion</h2></div>
-  <div class="category-card"><img src="kids-fashion.png" alt="Kids Fashion"><h2>Kids Fashion</h2></div>
-  <div class="category-card"><img src="gym.png" alt="Gym"><h2>Gym</h2></div>
-  <div class="category-card"><img src="kitchen.png" alt="Kitchen"><h2>Kitchen</h2></div>
-  <div class="category-card"><img src="furnishing.png" alt="Furnishing"><h2>Furnishing</h2></div>
-  <div class="category-card"><img src="electronics.png" alt="Electronics"><h2>Electronics</h2></div>
+  <div class="category-card">
+    <img src="womens-fashion.png" alt="Women’s Fashion">
+    <h2>Women’s Fashion</h2>
+    <p>Elegant and stylish outfits for women</p>
+  </div>
+
+  <div class="category-card">
+    <img src="kids-fashion.png" alt="Kids Fashion">
+    <h2>Kids Fashion</h2>
+    <p>Fun and colorful clothing for children</p>
+  </div>
+
+  <div class="category-card">
+    <img src="gym.png" alt="Gym">
+    <h2>Gym</h2>
+    <p>High-performance gym wear and accessories</p>
+  </div>
+
+  <div class="category-card">
+    <img src="kitchen.png" alt="Kitchen">
+    <h2>Kitchen</h2>
+    <p>Essential tools and appliances for your kitchen</p>
+  </div>
+
+  <div class="category-card">
+    <img src="furnishing.png" alt="Furnishing">
+    <h2>Furnishing</h2>
+    <p>Decorative and functional home furnishings</p>
+  </div>
+
+  <div class="category-card">
+    <img src="electronics.png" alt="Electronics">
+    <h2>Electronics</h2>
+    <p>Latest gadgets and electronics</p>
+  </div>
 </div>
 
 </body>
-</html>category-card" onclick="alert('Kids Fashion clicked')">
-    <img src="kids-fashion.png" alt="Kids Fashion">
-    <h2>Kids Fashion</h2>
-    <p>Fun and comfortable clothing for kids</p>
-  </div>
-  <div class="category-card" onclick="window.open('gym.html','_blank')">
-    <img src="gym.png" alt="Gym">
-    <h2>Gym</h2>
-    <p>Workout clothes and accessories</p>
-  </div>
-  <div class="category-card" onclick="alert('Kitchen clicked')">
+</html>ked')">
     <img src="kitchen.png" alt="Kitchen">
     <h2>Kitchen</h2>
     <p>Utensils, gadgets and more</p>
