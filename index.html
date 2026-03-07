@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dripster Store</title>
+<title>Mens Fashion - Dripster</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* BODY & BACKGROUND */
 body{
   margin:0;
   font-family:'Open Sans', sans-serif;
@@ -17,8 +16,6 @@ body{
   background-size: cover;
   position: relative;
 }
-
-/* BLUR OVERLAY */
 body::before {
   content:"";
   position:fixed;
@@ -28,99 +25,103 @@ body::before {
   backdrop-filter: blur(6px);
   z-index:-1;
 }
-
-/* HEADER */
 .navbar{
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 20px;
+  padding: 20px;
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(4px);
   box-shadow:0 6px 20px rgba(0,0,0,0.6);
 }
-
 .logo{
-  text-align: center;
+  text-align:center;
 }
 .logo img{
-  display: block;
-  margin: 0 auto;
-  max-width: 360px;
+  max-width: 300px;
   height: auto;
 }
-.tagline {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  color: #ffd700;
-  display: block;
-  margin-top: 5px;
-  letter-spacing: 1px;
-  font-weight: 600;
+.products{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap: 30px;
+  margin-top:40px;
+  padding:0 20px;
 }
+.card{
+  width:260px;
+  padding:20px;
+  border-radius:20px;
+  background:#1a1a1a;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+}
+.card img{
+  width:150px;
+  margin-bottom:15px;
+  border-radius:15px;
+}
+.card h2{
+  font-family:'Playfair Display', serif;
+  font-size:20px;
+  margin-bottom:8px;
+  color:#ffd700;
+}
+.card p{
+  font-size:14px;
+  margin-bottom:10px;
+}
+.buy-btn{
+  padding:10px 25px;
+  border:none;
+  border-radius:20px;
+  background:#ff4c4c;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.2s;
+}
+.buy-btn:hover{
+  background:#ff758c;
+}
+</style>
+</head>
+<body>
 
-/* SEARCH BAR */
-.search-wrapper-full {
-  position: relative;
-  width: 90vw; 
-  max-width: 450px;
-  margin-top: 20px;
-}
-.search-wrapper-full input {
-  width: 100%;
-  box-sizing: border-box; 
-  padding: 12px 45px 12px 15px;
-  border-radius: 30px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background: rgba(255,255,255,0.1);
-  color: #fff;
-  backdrop-filter: blur(4px);
-}
-.search-wrapper-full input::placeholder{
-  color: #ddd;
-}
-.search-wrapper-full .search-icon-full {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  filter: invert(1);
-}
+<div class="navbar">
+  <div class="logo">
+    <img src="my-logo.png" alt="Dripster Logo">
+  </div>
+</div>
 
-/* CATEGORY CARDS */
-.categories{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 40px;
-  padding: 0 20px;
-}
-.category-card{
-  width: 220px;
-  background: rgba(255,215,0,0.05);
-  border-radius: 25px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.category-card:hover{
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(255,215,0,0.4);
-}
-.category-card img{
-  width:120px;
-  height:120px;
-  border-radius: 15px;
-  margin-bottom: 15px;
+<div class="products">
+  <!-- PRODUCT 1 -->
+  <div class="card">
+    <img src="shirt.png" alt="Premium Shirt">
+    <h2>Premium Shirt</h2>
+    <p>₹799</p>
+    <button class="buy-btn" onclick="window.open('https://fktr.in/swsXx2j','_blank')">Buy Now</button>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="card">
+    <img src="pants.png" alt="Stylish Pants">
+    <h2>Stylish Pants</h2>
+    <p>₹999</p>
+    <button class="buy-btn" onclick="window.open('https://fktr.in/swsXx2j','_blank')">Buy Now</button>
+  </div>
+
+  <!-- Add more products as needed -->
+</div>
+
+</body>
+</html>ottom: 15px;
 }
 .category-card h2{
   font-family:'Playfair Display', serif;
