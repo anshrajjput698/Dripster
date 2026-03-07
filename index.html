@@ -13,7 +13,7 @@ body{
   font-size:17px;
   line-height:1.7;
   color:white;
-  background: url('assets/fitness-bg.jpg') no-repeat center center fixed;
+  background: url('fitness-bg.jpg') no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
@@ -27,7 +27,7 @@ body::before {
   z-index:-1;
 }
 
-/* NAVBAR / HEADER */
+/* HEADER */
 .navbar{
   display:flex;
   flex-direction: column;
@@ -134,55 +134,59 @@ body::before {
 <!-- HEADER -->
 <div class="navbar">
   <div class="logo">
-    <img src="assets/my-logo.png" alt="Dripster Logo">
+    <!-- Replace this with your logo image in same folder -->
+    <img src="my-logo.png" alt="Dripster Logo">
     <span class="tagline">Wear Luxury</span>
   </div>
 
   <!-- Search Bar -->
   <div class="search-wrapper-full">
     <input type="text" placeholder="Search categories...">
-    <img src="assets/search-icon.png" alt="Search" class="search-icon-full">
+    <img src="search-icon.png" alt="Search" class="search-icon-full">
   </div>
 </div>
 
 <!-- CATEGORY CARDS -->
 <div class="categories">
   <div class="category-card" onclick="alert('Mens Fashion clicked')">
-    <img src="assets/mens-fashion.png" alt="Mens Fashion">
+    <img src="mens-fashion.png" alt="Mens Fashion">
     <h2>Mens Fashion</h2>
     <p>Trendy clothes and accessories for men</p>
   </div>
   <div class="category-card" onclick="alert('Women’s Fashion clicked')">
-    <img src="assets/womens-fashion.png" alt="Women’s Fashion">
+    <img src="womens-fashion.png" alt="Women’s Fashion">
     <h2>Women’s Fashion</h2>
     <p>Latest fashion for women</p>
   </div>
   <div class="category-card" onclick="alert('Kids Fashion clicked')">
-    <img src="assets/kids-fashion.png" alt="Kids Fashion">
+    <img src="kids-fashion.png" alt="Kids Fashion">
     <h2>Kids Fashion</h2>
     <p>Fun and comfortable clothing for kids</p>
   </div>
   <div class="category-card" onclick="window.open('gym.html','_blank')">
-    <img src="assets/gym.png" alt="Gym">
+    <img src="gym.png" alt="Gym">
     <h2>Gym</h2>
     <p>Workout clothes and accessories</p>
   </div>
   <div class="category-card" onclick="alert('Kitchen clicked')">
-    <img src="assets/kitchen.png" alt="Kitchen">
+    <img src="kitchen.png" alt="Kitchen">
     <h2>Kitchen</h2>
     <p>Utensils, gadgets and more</p>
   </div>
   <div class="category-card" onclick="alert('Furnishing clicked')">
-    <img src="assets/furnishing.png" alt="Furnishing">
+    <img src="furnishing.png" alt="Furnishing">
     <h2>Furnishing</h2>
     <p>Decor and home essentials</p>
   </div>
   <div class="category-card" onclick="alert('Electronics clicked')">
-    <img src="assets/electronics.png" alt="Electronics">
+    <img src="electronics.png" alt="Electronics">
     <h2>Electronics</h2>
     <p>Latest gadgets and devices</p>
   </div>
 </div>
+
+</body>
+</html>
 
 </body>
 </html>
