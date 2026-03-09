@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Electronics - Dripster</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Open Sans',sans-serif;
+color:#f5f5f5;
+background:#111;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:center;
+padding:20px;
+background:#000;
+}
+
+.logo img{
+max-width:260px;
+}
+
+/* PAGE TITLE */
+
+.title{
+text-align:center;
+margin-top:20px;
+font-family:'Playfair Display',serif;
+color:#ffd700;
+}
+
+/* BRAND GRID */
+
+.brands{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+/* BRAND CARD */
+
+.brand-card{
+background:#1a1a1a;
+padding:25px;
+border-radius:18px;
+text-align:center;
+text-decoration:none;
+color:white;
+box-shadow:0 8px 20px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.brand-card:hover{
+transform:translateY(-6px);
+}
+
+/* BRAND IMAGE */
+
+.brand-card img{
+width:110px;
+margin-bottom:12px;
+}
+
+/* BRAND NAME */
+
+.brand-card h2{
+margin:0;
+font-family:'Playfair Display',serif;
+color:#ffd700;
+font-size:20px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+<div class="logo">
+<img src="my-logo.png">
+</div>
+</div>
+
+
+<h1 class="title">Electronics</h1>
+
+
+<!-- BRAND SECTION -->
+
+<div class="brands">
+
+<a href="apple.html" class="brand-card">
+<img src="apple.png">
+<h2>Apple</h2>
+</a>
+
+<a href="samsung.html" class="brand-card">
+<img src="samsung.png">
+<h2>Samsung</h2>
+</a>
+
+<a href="google.html" class="brand-card">
+<img src="google.png">
+<h2>Google</h2>
+</a>
+
+<a href="motorola.html" class="brand-card">
+<img src="motorola.png">
+<h2>Motorola</h2>
+</a>
+
+<a href="tecno.html" class="brand-card">
+<img src="tecno.png">
+<h2>Tecno</h2>
+</a>
+
+<a href="xiaomi.html" class="brand-card">
+<img src="xiaomi.png">
+<h2>Xiaomi</h2>
+</a>
+
+</div>
+
+</body>
+</html>
